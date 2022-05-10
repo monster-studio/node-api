@@ -1,12 +1,11 @@
 import express from "express"
-import bodyParser from "body-parser"
 import _ from 'lodash';
 
 const app = express();
 
-app.use(bodyParser.json())
+app.use(express.json())
 
-app.listen( 3000, () => console.log(test))
+app.listen( 3000, () => console.log("running"))
 
 app.post('/api', (req, res) => {
 
