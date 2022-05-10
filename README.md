@@ -10,7 +10,7 @@
 
 <h3 dir="auto">URL:</h3>
 <pre class="notranslate">
-<code class="notranslate">{full folder path}/github.php</code>
+<code class="notranslate">{full folder path}/api</code>
 </pre>
 
 <h3 dir="auto">Method::</h3>
@@ -22,24 +22,29 @@
 <pre class="notranslate">
 <code class="notranslate">
 {
-    "evidence_id": 1,
-    "evidence_data": [
-        {
-            "login_name": "anecdotes-exercise",
-            "role": "owner",
-            "user_details": {
-                "updated_at": "2021-07-26T09:41:56Z",
-                "id": 120000,
-                "email": "exercise@anecdotes.ai",
-                "first_name": "anec",
-                "last_name": "dotes"
-            },
-            "security": {
-                "mfa_enabled": true,
-                "mfa_enforced": true
-            }
+    "config": {
+        "id": [
+            "id"
+        ],
+        "email": [
+            "details.email"
+        ],
+        "full_name": [
+            "user_details.name",
+            "user_details.last_name"
+        ]
+    },
+    "payload": {
+        "id": "123",
+        "user_details": {
+            "name": "Sam",
+            "last_name": "One",
+            "id": "111"
+        },
+        "details": {
+            "email": "1@1.com"
         }
-    ]
+    }
 }
 </code>
 </pre>
@@ -48,11 +53,9 @@
 <pre class="notranslate">
 <code class="notranslate">
 {
-    "evidence_id":1,
-    "full_name":"anec dotes",
-    "email":"exercise@anecdotes.ai",
-    "updated_at":"2021-07-26T09:41:56Z",
-    "MFA_enabled":true
+    "id": "123",
+    "email": "1@1.com",
+    "full_name": "SamOne"
 }
 </code>
 </pre>
