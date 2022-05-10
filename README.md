@@ -17,7 +17,12 @@
 <code class="notranslate">POST</code>
 </pre>
 
-<h3 dir="auto">Json exemple:</h3>
+<h3 dir="auto">Header:</h3>
+<pre class="notranslate">
+<code class="notranslate">Content-Type: application/json</code>
+</pre>
+
+<h3 dir="auto">Body Exemple:</h3>
 <pre class="notranslate">
 <code class="notranslate">
 {
