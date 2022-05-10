@@ -1,3 +1,9 @@
+<h1>Short Description</h1>
+
+With this RESTful API you can POST a JSON wich include config and payload to the endpoint,
+The config define the values that you want to extract from the payload and the path to each value.
+In response you will get clean json with the data that you have requested.
+
 <h1>How to use</h1>
 
 <h2>installation</h2>
