@@ -22,16 +22,9 @@
 <code class="notranslate">
 {
     "config": {
-        "id": [
-            "id"
-        ],
-        "email": [
-            "details.email"
-        ],
-        "full_name": [
-            "user_details.name",
-            "user_details.last_name"
-        ]
+        "id": ["id"],
+        "email": ["details.email"],
+        "full_name": ["user_details.name", "user_details.last_name"]
     },
     "payload": {
         "id": "123",
