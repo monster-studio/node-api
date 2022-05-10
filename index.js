@@ -17,7 +17,8 @@ app.post('/api', (req, res) => {
         const [key, value] = entry;
         response[key] = "";
         for (let i = 0; i < config[key].length; i++) {
-            response[key] += _.get(payload, config[key][i]);
+            let space = ""; if(i>0){space = " "}
+            response[key] += space + _.get(payload, config[key][i]);
         }
     });
     
